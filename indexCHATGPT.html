@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('header-image.jpg') no-repeat center center/cover;
+            text-align: center;
+            color: white;
+            padding: 100px 20px;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px;
+        }
+
+        .header p {
+            font-size: 1.2rem;
+            margin: 0 0 20px;
+        }
+
+        .header .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Steps Section */
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            padding: 40px 20px;
+            background-color: white;
+        }
+
+        .step {
+            text-align: center;
+            flex: 1;
+            margin: 0 10px;
+        }
+
+        .step h3 {
+            margin-bottom: 10px;
+        }
+
+        .step p {
+            margin: 0 0 10px;
+        }
+
+        .step .btn {
+            display: inline-block;
+            padding: 8px 16px;
+            background: #f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Highlighted Section */
+        .highlight {
+            display: flex;
+            align-items: center;
+            padding: 40px 20px;
+            background-color: #fdf0f0;
+        }
+
+        .highlight img {
+            width: 50%;
+            margin-right: 20px;
+        }
+
+        .highlight div {
+            flex: 1;
+        }
+
+        .highlight h2 {
+            margin: 0 0 10px;
+        }
+
+        .highlight p {
+            margin: 0 0 20px;
+        }
+
+        .highlight .btn {
+            padding: 10px 20px;
+            background: #f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Featured Events */
+        .featured-events {
+            padding: 40px 20px;
+            background-color: white;
+            text-align: center;
+        }
+
+        .featured-events h2 {
+            margin-bottom: 20px;
+        }
+
+        .events-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .event-card {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 30%;
+            text-align: left;
+        }
+
+        .event-card img {
+            width: 100%;
+            height: auto;
+        }
+
+        .event-card .content {
+            padding: 20px;
+        }
+
+        .event-card h3 {
+            margin: 0 0 10px;
+        }
+
+        .event-card p {
+            margin: 0 0 10px;
+        }
+
+        .event-card .btn {
+            padding: 8px 16px;
+            background: #f00;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #000;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0;
+        }
+
+        .footer .links {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .footer .links a {
+            color: white;
+            text-decoration: none;
+            margin: 5px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Short description of the event or purpose of the newsletter goes here.</p>
+        <a href="#" class="btn">Learn More</a>
+    </div>
+
+    <div class="steps">
+        <div class="step">
+            <h3>Short summary of step one</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Button</a>
+        </div>
+        <div class="step">
+            <h3>Short summary of step two</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Button</a>
+        </div>
+        <div class="step">
+            <h3>Short summary of step three</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <a href="#" class="btn">Button</a>
+        </div>
+    </div>
+
+    <div class="highlight">
+        <img src="highlight-image.jpg" alt="Highlight">
+        <div>
+            <h2>Lorem ipsum dolor sit</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ut dolor ornare, cursus nulla a, hendrerit metus.</p>
+            <a href="#" class="btn">Button</a>
+        </div>
+    </div>
+
+    <div class="featured-events">
+        <h2>Featured Events</h2>
+        <div class="events-container">
+            <div class="event-card">
+                <img src="event-image-1.jpg" alt="Event">
+                <div class="content">
+                    <h3>Event title heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Event</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="event-image-2.jpg" alt="Event">
+                <div class="content">
+                    <h3>Event title heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Event</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <img src="event-image-3.jpg" alt="Event">
+                <div class="content">
+                    <h3>Event title heading</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <a href="#" class="btn">View Event</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2025 Company Name. All rights reserved.</p>
+        <div class="links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Contact Us</a>
+        </div>
+    </div>
+</body>
+
+</html>
