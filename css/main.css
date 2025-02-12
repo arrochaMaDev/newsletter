@@ -371,3 +371,46 @@ body {
 }
 
 /* footer */
+.footer {
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo-and-contact {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  color: white;
+  display: flex;
+  flex-direction: column;
+}
+
+.redes-container {
+  display: flex; /* Coloca las redes sociales en fila */
+  gap: 10px; /* Espacio entre los íconos de redes sociales */
+}
+
+.footer img {
+  max-width: 100%; /* Asegura que los íconos de redes sociales no sean demasiado grandes */
+  height: auto;
+}
+
+.footer a {
+  color: white;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+}
