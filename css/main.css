@@ -5,7 +5,8 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  line-height: 1.5;
 }
 
 .header {
@@ -55,7 +56,7 @@ body {
   margin-top: 10px;
 }
 
-.btn {
+.btnHeader {
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 1rem;
@@ -76,12 +77,19 @@ body {
   height: auto;
 }
 
-.cardsDiv {
-  padding-top: 50px;
-  text-align: center;
+.summary {
+  display: flex;
+  flex-direction: column;
 }
 
-.cards {
+.summary h2 {
+  display: block;
+  padding-top: 50px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.cardsDiv {
   display: flex;
   justify-content: space-around;
   padding: 40px 20px;
@@ -105,16 +113,237 @@ body {
   margin: 10px;
 }
 
-.card .btn {
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
   display: flex;
   background-color: rgb(229, 74, 74);
   border-radius: 20px;
   color: white;
   text-decoration: none;
-  width: fit-content;
 }
 
-.card .btn img {
+.btn img {
   width: 20px;
   margin: 0 5px 0 0;
+}
+
+/* description1 */
+
+.description1 {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(230, 199, 199);
+  text-align: center;
+}
+
+.description1 h2 {
+  padding: 50px 0 50px 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.description1Content {
+  display: flex;
+}
+
+.description1Content img {
+  width: 70%;
+  filter: grayscale(100%);
+  padding: 0 50px 0 50px;
+}
+
+.description1Content p {
+  /* background-color: blue; */
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  padding: 0 50px 50px 0px;
+}
+
+.description1Text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea el texto y el botón a la izquierda */
+  padding: 0 20px 20px 20px;
+}
+
+/* description2 */
+.projects {
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+}
+
+.projects h2 {
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.project-container {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+}
+
+.project h3 {
+  text-align: start;
+  margin-bottom: 20px;
+  width: 100%;
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  text-align: left;
+}
+
+.project img {
+  width: 50%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.project-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.project-link {
+  display: block;
+  margin-top: 10px;
+  color: black;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+}
+
+/* events */
+
+.events {
+  background-color: rgb(230, 199, 199);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.events h2 {
+  padding: 20px 0 0 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.events-container {
+  display: flex;
+  gap: 50px;
+}
+
+.event {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  text-align: start;
+}
+
+.event img {
+  width: 100%;
+  height: auto;
+  filter: grayscale(100%);
+}
+
+.date-and-location {
+  margin: 20px 20px 0px 20px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.date-and-location img {
+  width: 20px;
+}
+
+.event h3 {
+  margin: 10px 20px 0px 20px;
+  font-size: 1.5rem;
+  font-weight: lighter;
+}
+.event p {
+  font-size: 1rem;
+  line-height: 1.5;
+  margin: 0px 20px 0px 20px;
+}
+
+.view-event {
+  display: block;
+  color: black;
+  margin: 20px 20px 0px 20px;
+}
+
+.view-event img {
+  width: 20px;
+  margin: 0 5px 0 0;
+  align-items: center;
+}
+
+/* resaltado borde color rojo */
+.event {
+  border: 2px solid transparent; /* Borde por defecto */
+  transition: border-color 0.3s ease; /* Transición suave */
+}
+
+.event:hover {
+  border-color: red; /* Cambia el borde a rojo al pasar el ratón */
+}
+
+.events .btn {
+  margin-top: 50px;
+  width: max-content;
+}
+
+.description2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.description2 h2 {
+  padding: 50px 0 50px 0;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.description2-container {
+  display: flex;
+  gap: 50px;
+}
+
+.description2 img {
+  width: 50%;
+  filter: grayscale(100%);
+}
+
+.description2-text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0 20px 20px 20px;
 }
