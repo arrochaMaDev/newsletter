@@ -4,9 +4,32 @@
   box-sizing: border-box;
 }
 
-body {
+/* Fuente para los encabezados (h1, h2, h3, h4, h5, h6) */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Merriweather", serif;
-  line-height: 1.5;
+}
+
+/* Fuente para el resto del texto */
+body {
+  font-family: "Rubik", sans-serif;
+}
+
+.banner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  color: black;
+  gap: 20px;
+}
+
+.banner a {
+  color: black;
 }
 
 .header {
@@ -187,7 +210,7 @@ body {
 .event {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   text-align: start;
   padding-bottom: 20px;
   width: 50%;
@@ -228,7 +251,7 @@ body {
 }
 
 .date-and-location {
-  padding: 20px 20px 0px 20px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   gap: 20px;
@@ -243,14 +266,13 @@ body {
 .date,
 .location {
   display: flex;
-  align-items: center;
   gap: 5px;
 }
 
 .event h3 {
-  margin: 10px 20px 0px 20px;
+  padding: 0px 20px 0px 20px;
   font-size: 1.5rem;
-  font-weight: lighter;
+  width: 100%;
 }
 .event p {
   font-size: 1rem;
@@ -278,6 +300,12 @@ body {
 
 .event:hover {
   border-color: #ef3340; /* Cambia el borde a ef334010 al pasar el ratón */
+}
+
+.ver-evento {
+  display: block;
+  align-items: start;
+  width: 100%;
 }
 
 .events .btn {
@@ -322,8 +350,10 @@ body {
 
 .other-info1-container {
   display: flex;
-  gap: 20px;
-  width: 60%;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
 }
 
 .other-info1 img {
@@ -336,6 +366,10 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.other-info1-text a {
+  text-decoration: none;
 }
 
 .other-info1-text .btn {
@@ -394,6 +428,10 @@ body {
 .other-info2-text span {
   text-align: justify;
   padding-bottom: 20px;
+}
+
+.other-info2-text a {
+  text-decoration: none;
 }
 
 .other-info2-text .btn {
@@ -479,8 +517,8 @@ body {
   text-decoration: underline;
 }
 
-/* proveedores */
-.proveedores {
+/* PROVEEDORES */
+/* .proveedores {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -495,11 +533,50 @@ body {
 }
 
 .proveedores-container img {
-  width: 10%;
-  filter: grayscale(100%);
+  width: 20%;
+} */
+
+.proveedores {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+  width: 100%;
+  overflow: hidden;
 }
 
-/* footer */
+/* carrusel horizontal sin barra de desplazamiento ni botones */
+.proveedores-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  padding: 20px 0;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  width: 90%;
+  scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
+}
+
+/* Ocultar scrollbar en Webkit (Chrome, Safari) */
+.proveedores-container::-webkit-scrollbar {
+  display: none;
+}
+
+.proveedores-container img {
+  width: 20%;
+  min-width: 200px;
+  scroll-snap-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Efecto de escala al hacer hover */
+.proveedores-container img:hover {
+  transform: scale(1.1);
+}
+
+/* FOOTER */
 .footer {
   background-color: black;
   color: white;
@@ -516,10 +593,15 @@ body {
 
 .footer h5 {
   font-size: 1rem;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.footer span {
-  margin-bottom: 20px;
+.footer span,
+.footer a {
+  margin-top: 10px;
+  font-weight: lighter;
+  color: white;
 }
 
 .footer-logo-and-contact {
@@ -535,9 +617,9 @@ body {
 }
 
 #logoFooter {
-  width: 100%;
+  width: 60%;
   height: auto;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 }
 
 .redes-container {
@@ -554,14 +636,10 @@ body {
   object-fit: cover;
 }
 
-.footer a {
-  color: white;
-}
-
 .footer-bottom {
   display: flex;
   justify-content: space-between;
-  padding: 0 50px 0 50px;
+  padding: 0 50px 50px 50px;
 }
 
 .legal-links {
