@@ -205,13 +205,13 @@ body {
 .events h2 {
   padding: 20px 0 0 0;
   text-align: center;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 .events-container {
   display: flex;
   gap: 50px;
-  padding: 50px;
+  padding-top: 50px;
   justify-content: center;
 }
 
@@ -221,7 +221,7 @@ body {
   align-items: center;
   text-align: start;
   padding-bottom: 20px;
-  width: 50%;
+  width: 100%;
 }
 
 .event-img-container {
@@ -269,6 +269,7 @@ body {
 .date-and-location img {
   display: flex;
   width: 20px;
+  height: 20px;
 }
 
 .date,
@@ -353,7 +354,7 @@ body {
   padding: 50px 0 50px 0;
   text-align: center;
   font-size: 2rem;
-  width: 50%;
+  width: 100%;
 }
 
 .other-info1-container {
@@ -361,11 +362,13 @@ body {
   justify-content: center;
   align-items: center;
   gap: 10px;
-  width: 50%;
+  width: 100%;
+  padding: 20px;
 }
 
 .other-info1 img {
   width: 100%;
+  padding: 0 20px 0 20px;
   /* filter: grayscale(100%); */
 }
 
@@ -406,31 +409,33 @@ body {
   flex-direction: column;
   background-color: #ef334010;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
 }
 
 .other-info2 h2 {
-  padding: 0 0 50px 0;
+  padding: 50px;
   text-align: center;
   font-size: 3rem;
 }
 
 .other-info2-content {
   display: flex;
+  align-items: center;
+  flex-direction: column;
 }
 
 .other-info2-content img {
-  width: 60%;
+  width: 100%;
   filter: grayscale(100%);
-  padding: 0 50px 0 50px;
 }
 
 .other-info2-text {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: flex-start;
-  width: 30%;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0 20px 0;
 }
 
 .other-info2-text span {
@@ -548,6 +553,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
   margin: 50px 0;
   width: 100%;
   overflow: hidden;
@@ -557,13 +563,13 @@ body {
 .proveedores-container {
   display: flex;
   justify-content: center;
-  gap: 50px;
+  gap: 30px;
   padding: 20px 0;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   scroll-behavior: smooth;
   white-space: nowrap;
-  width: 90%;
+  width: 80%;
   scrollbar-width: none; /* Oculta la barra de desplazamiento en Firefox */
 }
 
@@ -573,8 +579,7 @@ body {
 }
 
 .proveedores-container img {
-  width: 20%;
-  min-width: 200px;
+  width: 120%;
   scroll-snap-align: center;
   transition: transform 0.3s ease-in-out;
 }
@@ -683,7 +688,43 @@ body {
   .news-content {
     flex-direction: row;
   }
+
+  /* events */
+  .event {
+    width: 50%;
+  }
+
+  /* other info1 */
+  .other-info1 img {
+    width: 70%;
+  }
+
+  /* other info2 */
+  .other-info2-content {
+    flex-direction: row;
+  }
+
+  .other-info2-content img {
+    width: 70%;
+    height: 70%;
+    padding: 0 10px 0 10px;
+  }
+
+  /* proveedores */
+  .proveedores-container img {
+    width: 100%;
+  }
 }
+
+/* 
+
+
+
+
+
+
+
+ */
 
 /* DESKTOP */
 @media (min-width: 1024px) {
@@ -724,4 +765,40 @@ body {
   }
 
   /* events */
+  .event {
+    width: 50%;
+  }
+
+  /* other info1 */
+  .other-info1 img {
+    width: 50%;
+  }
+
+  /* other info2 */
+  .other-info2 {
+    padding: 50px;
+  }
+  .other-info2-content {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .other-info2-content img {
+    width: 60%;
+    padding: 50px;
+    padding-left: 100px;
+  }
+
+  .other-info2-text {
+    width: 50%;
+    align-items: start;
+  }
+  .other-info2-text span {
+    padding-right: 100px;
+  }
+
+  /* proveedores */
+  .proveedores-container img {
+    width: 100%;
+  }
 }
