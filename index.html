@@ -6,801 +6,838 @@
   <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <title>Newsletter</title>
-<style>
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Merriweather", serif;
-}
-
-body {
-  font-family: "Rubik", sans-serif;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1440px;
-  margin: 0 auto;
-}
-
-/* Estilos base mobile-first */
-
-/* BANNER  */
-.banner {
-  display: flex;
-  color: black;
-  margin: 20px 0 20px 0;
-}
-
-.banner a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: black;
-}
-
-/* HEADER */
-.header {
-  width: 100%;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: white;
-  position: relative;
-  overflow: hidden;
-  padding: 10px;
-}
-
-.header-bg {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-
-.header-bg::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: url("https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png ") no-repeat center center/cover;
-  filter: grayscale(100%) blur(2px);
-}
-
-.header-bg::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, #d9d9d900 20%, #ef3340 100%);
-}
-
-.header-content {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-margin-top: 200px;
-  z-index: 1; 
-}
-
-.header h1 {
-  position: relative;
-  font-weight: 600;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0%;
-  z-index: 1;
-  padding-bottom: 50px;
-}
-
-.header-btn {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  z-index: 1;
-}
-
-.header-btn button {
-  position: relative;
-  padding: 10px 20px;
-  background: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  margin-bottom: 150px;
-  z-index: 1;
-}
-
-.button {
-  position: relative;
-  background: white;
-  color: black;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-.logos {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 1;
-}
-
-.logos td {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-
-.logos td img {
-  width: 40%;
-  height: auto;
-  object-fit: contain;
-}
-
-/* NEWS */
-.news tr {
-  display: flex;
-  flex-direction: column;
-}
-
-.news-title {
-  display: flex;
-  justify-content: center;
-}
-
-.news h2 {
-  padding: 80px 0 80px 0;
-  text-align: center;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
-  letter-spacing: 0%;
-  text-align: center;
-}
-
-.news-content {
-  margin: 0 20px 0 20px;
-}
-
-.news-item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: start;
-  width: 100%;
-}
-
-.news-image-container {
-  position: relative;
-  display: flex;
-  width: 100%;
-  overflow: hidden;
-}
-
-.news-image-container img {
-  width: 100%;
-  height: auto;
-  filter: grayscale(100%);
-  aspect-ratio: 1/1;
-  object-fit: cover;
-}
-
-.triangle-logo-red {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60%;
-  height: 60%;
-  background: linear-gradient(to top left, #ef3340 0%, #ffffff00 100%);
-  clip-path: polygon(100% 100%, 0% 100%, 100% 0%);
-}
-
-.triangle-logo-red img {
-  position: absolute;
-  width: 50%;
-  height: auto;
-  aspect-ratio: 0;
-  bottom: 15%;
-  right: 5%;
-  filter: none;
-}
-
-.news-item a {
-  display: block;
-  color: black;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 22.4px;
-  letter-spacing: 0;
-  text-decoration: underline;
-  text-decoration-style: solid;
-  margin: 20px 0 20px 0;
-}
-
-/* EVENTS */
-.events {
-  background-color: #ef334010;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.events-table {
-  max-width: 481px;
-  margin: 20px;
-}
-
-.events h2 {
-  text-align: center;
-  font-family: Merriweather;
-  font-weight: 700;
-  font-size: 32px;
-  padding: 20px 0;
-}
-
-.event {
-  display: flex;
-  flex-direction: column;
-  border: solid 2px #ef3340;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
-
-.event-table {
-  border-collapse: collapse; /* Elimina espacios entre bordes de celdas */
-  border-spacing: 0; /* Asegura que no haya espacio entre celdas */
-}
-
-.event-img-container {
-  position: relative;
-  text-align: center;
-  padding: 0;
-  margin: 0;
-  overflow: hidden;
-}
-
-.event-img-container img {
-  width: 100%;
-  display: block;
-  filter: grayscale(100%);
-}
-
-.event-img-container::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 10%, #ef3340 100%);
-}
-
-.category {
-  position: absolute;
-  top: 10px;
-  left: 10px;
-  background: white;
-  color: black;
-  font-weight: 700;
-  padding: 5px 10px;
-}
-
-.date-and-location {
-  display: flex;
-  justify-content: start;
-  padding: 20px;
-  gap: 20px;
-}
-
-.date-and-location td {
-  display: flex;
-  align-items: start;
-}
-
-.date-and-location img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
-}
-
-.event-table h3 {
-  text-align: start;
-  font-size: 24px;
-  font-weight: 700;
-  padding-left: 20px;
-  width: 100%;
-}
-
-.view-event {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  padding: 20px 0 20px 20px;
-}
-
-.view-event img {
-  width: 20px;
-  margin-left: 5px;
-}
-
-.ver-evento {
-  text-align: center;
-  padding: 40px 0;
-}
-
-.ver-evento .btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 20px;
-  font-size: 16px;
-  background-color: #ef3340;
-  border-radius: 20px;
-  color: white;
-  text-decoration: none;
-  border: none;
-  cursor: pointer;
-  margin-bottom: 80px;
-}
-
-.btn img {
-  width: 20px;
-  margin-right: 5px;
-}
-
-/* OTHER INFO 1 */
-.other-info1 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  justify-content: center;
-  padding: 40px;
-}
-
-
-.other-info1 h2 {
-  text-align: start;
-  width: 100%;
-  font-family: Bodoni 72;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 43.2px;
-  letter-spacing: 0%;
-  padding-bottom: 40px;
-}
-
-.other-info1-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
-.other-info1 img {
-  width: 100%;
-}
-
-.other-info1-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: flex-start;
-}
-
-.other-info1-text a {
-  text-decoration: none;
-}
-
-.other-info1-text .btn {
-  margin-top: 20px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  background-color: #ef3340;
-  border-radius: 20px;
-  color: white;
-  text-decoration: none;
-  width: max-content;
-}
-
-.other-info1-text .btn img {
-  width: 20px;
-  padding: 0;
-  margin: 0 5px 0 0;
-}
-
-/* OTHER INFO 2 */
-.other-info2 {
-  display: flex;
-  flex-direction: column;
-  background-color: #ef334010;
-  text-align: center;
-  padding: 64px 20px 64px 20px;
-  width: 100%;
-}
-
-.other-info2-table {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-
-.other-info2-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.other-info2-content img {
-  width: 100%;
-  filter: grayscale(100%);
-}
-
-.other-info2-text {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  padding: 32px;
-}
-
-.other-info2-text span {
-  text-align: start;
-  font-family: Rubik;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  margin-bottom: 50px;
-}
-
-.other-info2-text a {
-  text-decoration: none;
-}
-
-.other-info2-text .btn {
-  padding: 10px 20px;
-  font-size: 1rem;
-  border: none;
-  cursor: pointer;
-  display: flex;
-  background-color: #ef3340;
-  border-radius: 20px;
-  color: white;
-  text-decoration: none;
-  width: max-content;
-}
-
-.other-info2-text .btn img {
-  width: 20px;
-  padding: 0;
-  margin: 0 5px 0 0;
-}
-
-/* PROJECTS */
-.projects {
-  display: flex;
-  flex-direction: column;
-  padding: 50px;
-}
-
-.projects h2 {
-  text-align: center;
-  padding-bottom: 50px;
-}
-
-.project-container {
-  display: flex;
-  gap: 50px;
-  justify-content: center;
-  padding: 50px;
-}
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 50%;
-}
-
-.project h3 {
-  text-align: start;
-  margin-bottom: 20px;
-  width: 100%;
-  font-size: 2rem;
-  font-weight: lighter;
-}
-
-.project-text {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  text-align: left;
-}
-
-.project img {
-  width: 50%;
-  height: auto;
-  filter: grayscale(100%);
-}
-
-.project-text p {
-  font-size: 1rem;
-  line-height: 1.5;
-}
-
-.project-link {
-  display: block;
-  margin-top: 10px;
-  color: black;
-}
-
-.project-link:hover {
-  text-decoration: underline;
-}
-
-/* PROVEEDORES */
-.proveedores {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  margin: 50px 0;
-}
-
-.proveedores h2 {
-  font-weight: 700;
-  font-size: 15px;
-  line-height: 24px;
-  letter-spacing: 0%;
-  padding: 0 27px;
-}
-
-.proveedores-container {
-  display: table-row;
-  width: 100%;
-  display: block;
-  overflow-x: auto;
-  white-space: nowrap;
-  margin-top: 20px;
-}
-
-.proveedores-container td {
-  display: table-cell;
-  text-align: center;
-  vertical-align: middle;
-  display: inline-block;
-  margin: 10px;
-}
-
-.proveedores-container img {
-  width: 100%;
-  max-width: 120px;
-  height: auto;
-  transition: transform 0.3s ease-in-out;
-  display: block;
-}
-
-/* Efecto hover */
-.proveedores-container a:hover img {
-  transform: scale(1.1);
-}
-
-/* FOOTER */
-.footer {
-  background-color: black;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  padding: 20px;
-  padding-top: 30px;
-}
-
-.footer-content {
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-}
-
-.footer h5 {
-  font-family: Arial;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0%;
-  margin-top: 20px;
-}
-
-.footer span,
-.footer a {
-  color: white;
-  font-family: Arial;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  letter-spacing: 0%;
-}
-
-.footer-content td {
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo-and-contact {
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.footer-logo-and-contact img {
-  width: 134px;
-}
-
-.links {
-  color: white;
-  display: flex;
-  flex-direction: column;
-}
-
-.redes-container {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  margin-top: 20px;
-  margin-bottom: 50px;
-}
-
-.redes-container img {
-  filter: invert(1);
-  width: 24px;
-  height: 24px;
-  object-fit: contain;
-}
-
-.footer-bottom {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 50px 50px 50px;
-}
-
-.legal-links {
-  display: flex;
-  gap: 50px;
-}
-
-/* TABLETS */
-@media (min-width: 480px) and (max-width: 1024px) {
-  
-  /* BANNER */
-  .banner td {
-    display: flex;
-  }
-
-  .banner a {
-    margin-left: 10px;
-  }
-
-/* HEADER */
-.header {
-  width: 100%;
-}
-
-  .logos td {
-    gap: 50px;
-  }
-
-  /* NEWS */
-  .news {
-    margin: 0 50px 0 50px;
-  }
-
-  .news tr {
-    flex-direction: row;
-    gap: 20px;
-  }
-
-  .ver-evento .btn {
-    margin-bottom: 0;
-  }
-
-  /* OTHER INFO 1 */
-  .other-info1 {
-    padding: 64px 64px 64px 64px;
-  }
-
-  .other-info1 h2 {
-    text-align: center;
-    font-size: 36px;
-    padding-bottom: 64px;
-  }
-
-  .other-info1 img {
-    width: 70%;
-  }
-
-  /* OTHER INFO 2 */
-  .other-info2 {
-    padding: 120px 64px, 112px 64px;
-  }
-
-  .other-info2-content {
-    flex-direction: row;
-    gap: 32px;
-    margin: 20px;
-  }
-
-  .other-info2-img-content {
-    display: flex;
-  }
-
-  .other-info2-content img {
-    width: 100%;
-  }
-
-  .other-info2-text {
-    width: 250px;
-    padding: 32px;
-    align-items: start;
-  }
-
-  .other-info2-text span {
-    margin-bottom: 20px;
-    font-size: 15px;
-    line-height: 20px;
-  }
-
-  /* PROVEEDORES */
-  .footer {
-    padding: 50px;
-    padding-top: 30px;
-  }
-  .footer-content {
-    padding: 48px 0 0 48px;
-  }
-  .redes-container {
-    padding-left: 48px;
-  }
-}
-
-/* 
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Merriweather", serif;
+    }
+
+    body {
+      font-family: "Rubik", sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Estilos base mobile-first */
+
+    /* BANNER  */
+    /* .banner {
+      display: block;
+      text-align: center;
+      color: black;
+      font-size: 12px;
+      padding: 10px;
+    }
+
+    .banner a {
+      display: block;
+      color: #ef3340;
+      font-weight: bold;
+    } */
+
+    /* HEADER */
+    .header {
+      /* width: 100%; */
+      /* height: 812px; */
+      /* display: block;
+      justify-content: center;
+      text-align: center; */
+      /* color: white; */
+    }
+
+    .image-background {
+      /* width: 100%;
+      height: 100%;
+      display: block;
+      filter: grayscale(100%); */
+    }
+
+    .gradient-overlay {
+      /* background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 20%, rgba(239, 51, 64, 1) 100%);
+      width: 100%;
+      color: white;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    .h1-and-button {
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: center;
+      align-items: center; */
+      /* width: 857px;
+      height: 214px;
+      top: 343px; */
+      /* position: relative; */
+      /* width: 330px;
+      height: 320px; */
+      /* margin-top: 20px; */
+    }
+
+
+    /* .header-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    } */
+
+    /* .header-bg::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: url("https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png ") no-repeat center center/cover;
+      filter: grayscale(100%) blur(2px);
+    }*/
+
+    /* .header-bg::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, #d9d9d900 20%, #ef3340 100%);
+    }  */
+
+    /* .header-content {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 200px;
+      z-index: 1;
+    } */
+
+    .header h1 {
+      /* position: relative;
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0%; */
+      /* height: 240px; */
+      /* background-color: antiquewhite; */
+    }
+
+    .header-btn {
+      /* position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; */
+      /* gap: 20px; */
+    }
+
+    .header-btn button {
+      /* position: relative; */
+      /* padding: 10px 20px;
+      background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px; */
+    }
+
+    .button {
+      /* position: relative; */
+      /* background: white;
+      color: black;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px; */
+    }
+
+    .logos {
+      /* position: relative; 
+      display: block;
+      width: 100%;
+      justify-content: center;
+      align-items: center; */
+    }
+
+    .logos td {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .logos td img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+    }
+
+    /* NEWS */
+    .news tr {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .news-title {
+      display: flex;
+      justify-content: center;
+    }
+
+    .news h2 {
+      padding: 80px 0 80px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      line-height: 48px;
+      letter-spacing: 0%;
+      text-align: center;
+    }
+
+    .news-content {
+      margin: 0 20px 0 20px;
+    }
+
+    .news-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: start;
+      width: 100%;
+    }
+
+    .news-image-container {
+      position: relative;
+      display: flex;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .news-image-container img {
+      width: 100%;
+      height: auto;
+      filter: grayscale(100%);
+      aspect-ratio: 1/1;
+      object-fit: cover;
+    }
+
+    .triangle-logo-red {
+      position: absolute;
+      /* bottom: 0;
+      right: 0;
+      left: 0; */
+      width: 100%;
+      height: 100%;
+      /* background: linear-gradient(to top left, #ef3340 0%, #ffffff00 100%);
+      clip-path: polygon(100% 100%, 0% 100%, 100% 0%); */
+      background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 10%, #ef3340 100%);
+      overflow: hidden;
+    }
+
+    .triangle-logo-red img {
+      position: absolute;
+      width: 40%;
+      /* object-fit: contain; */
+      aspect-ratio: 0;
+      bottom: 5px;
+      right: 5px;
+      filter: none;
+      /* display: block; */
+      overflow: hidden;
+    }
+
+    #ia-logo {
+      bottom: -2px;
+      right: 0;
+    }
+
+    .news-item a {
+      display: block;
+      color: black;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22.4px;
+      letter-spacing: 0;
+      text-decoration: underline;
+      text-decoration-style: solid;
+      margin: 20px 0 20px 0;
+    }
+
+    /* EVENTS */
+    .events {
+      background-color: #ef334010;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .events-table {
+      max-width: 481px;
+      margin: 20px;
+    }
+
+    .events h2 {
+      text-align: center;
+      font-family: Merriweather;
+      font-weight: 700;
+      font-size: 32px;
+      padding: 20px 0;
+    }
+
+    .event {
+      display: flex;
+      flex-direction: column;
+      border: solid 2px #ef3340;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .event-table {
+      border-collapse: collapse;
+      /* Elimina espacios entre bordes de celdas */
+      border-spacing: 0;
+      /* Asegura que no haya espacio entre celdas */
+    }
+
+    .event-img-container {
+      position: relative;
+      text-align: center;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .event-img-container img {
+      width: 100%;
+      display: block;
+      filter: grayscale(100%);
+    }
+
+    .event-img-container::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 10%, #ef3340 100%);
+    }
+
+    .category {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: white;
+      color: black;
+      font-weight: 700;
+      padding: 5px 10px;
+    }
+
+    .date-and-location {
+      display: flex;
+      justify-content: start;
+      padding: 20px;
+      gap: 20px;
+    }
+
+    .date-and-location td {
+      display: flex;
+      align-items: start;
+    }
+
+    .date-and-location img {
+      width: 20px;
+      height: 20px;
+      margin-right: 5px;
+    }
+
+    .event-table h3 {
+      text-align: start;
+      font-size: 24px;
+      font-weight: 700;
+      padding-left: 20px;
+      width: 100%;
+    }
+
+    .view-event {
+      display: flex;
+      justify-content: start;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+      font-size: 16px;
+      padding: 20px 0 20px 20px;
+    }
+
+    .view-event img {
+      width: 20px;
+      margin-left: 5px;
+    }
+
+    .ver-evento {
+      text-align: center;
+      padding: 40px 0;
+    }
+
+    .ver-evento .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #ef3340;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      margin-bottom: 80px;
+    }
+
+    .btn img {
+      width: 20px;
+      margin-right: 5px;
+    }
+
+    /* OTHER INFO 1 */
+    .other-info1 {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      padding: 40px;
+    }
+
+
+    .other-info1 h2 {
+      text-align: start;
+      width: 100%;
+      font-family: Bodoni 72;
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 43.2px;
+      letter-spacing: 0%;
+      padding-bottom: 40px;
+    }
+
+    .other-info1-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .other-info1 img {
+      width: 100%;
+    }
+
+    .other-info1-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .other-info1-text a {
+      text-decoration: none;
+    }
+
+    .other-info1-text .btn {
+      margin-top: 20px;
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      background-color: #ef3340;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      width: max-content;
+    }
+
+    .other-info1-text .btn img {
+      width: 20px;
+      padding: 0;
+      margin: 0 5px 0 0;
+    }
+
+    /* OTHER INFO 2 */
+    .other-info2 {
+      display: flex;
+      flex-direction: column;
+      background-color: #ef334010;
+      text-align: center;
+      padding: 64px 20px 64px 20px;
+      width: 100%;
+    }
+
+    .other-info2-table {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .other-info2-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .other-info2-content img {
+      width: 100%;
+      filter: grayscale(100%);
+    }
+
+    .other-info2-text {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      padding: 32px;
+    }
+
+    .other-info2-text span {
+      text-align: start;
+      font-family: Rubik;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      margin-bottom: 50px;
+    }
+
+    .other-info2-text a {
+      text-decoration: none;
+    }
+
+    .other-info2-text .btn {
+      padding: 10px 20px;
+      font-size: 1rem;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      background-color: #ef3340;
+      border-radius: 20px;
+      color: white;
+      text-decoration: none;
+      width: max-content;
+    }
+
+    .other-info2-text .btn img {
+      width: 20px;
+      padding: 0;
+      margin: 0 5px 0 0;
+    }
+
+    /* PROJECTS */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      padding: 50px;
+    }
+
+    .projects h2 {
+      text-align: center;
+      padding-bottom: 50px;
+    }
+
+    .project-container {
+      display: flex;
+      gap: 50px;
+      justify-content: center;
+      padding: 50px;
+    }
+
+    .project {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      width: 50%;
+    }
+
+    .project h3 {
+      text-align: start;
+      margin-bottom: 20px;
+      width: 100%;
+      font-size: 2rem;
+      font-weight: lighter;
+    }
+
+    .project-text {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+      text-align: left;
+    }
+
+    .project img {
+      width: 50%;
+      height: auto;
+      filter: grayscale(100%);
+    }
+
+    .project-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .project-link {
+      display: block;
+      margin-top: 10px;
+      color: black;
+    }
+
+    .project-link:hover {
+      text-decoration: underline;
+    }
+
+    /* PROVEEDORES */
+    .proveedores {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin: 50px 0;
+    }
+
+    .proveedores h2 {
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 24px;
+      letter-spacing: 0%;
+      padding: 0 27px;
+    }
+
+    .proveedores-container {
+      display: table-row;
+      width: 100%;
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+      margin-top: 20px;
+    }
+
+    .proveedores-container td {
+      display: table-cell;
+      text-align: center;
+      vertical-align: middle;
+      display: inline-block;
+      margin: 10px;
+    }
+
+    .proveedores-container img {
+      width: 100%;
+      max-width: 120px;
+      height: auto;
+      transition: transform 0.3s ease-in-out;
+      display: block;
+    }
+
+    /* Efecto hover */
+    .proveedores-container a:hover img {
+      transform: scale(1.1);
+    }
+
+    /* FOOTER */
+    .footer {
+      background-color: black;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 20px;
+      padding-top: 30px;
+    }
+
+    .footer-content {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+    }
+
+    .footer h5 {
+      font-family: Arial;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0%;
+      margin-top: 20px;
+    }
+
+    .footer span,
+    .footer a {
+      color: white;
+      font-family: Arial;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 21px;
+      letter-spacing: 0%;
+    }
+
+    .footer-content td {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-logo-and-contact {
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-logo-and-contact img {
+      width: 134px;
+    }
+
+    .links {
+      color: white;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .redes-container {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+
+    .redes-container img {
+      filter: invert(1);
+      width: 24px;
+      height: 24px;
+      object-fit: contain;
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      padding: 0 50px 50px 50px;
+    }
+
+    .legal-links {
+      display: flex;
+      gap: 50px;
+    }
+
+    /* TABLETS */
+    @media (min-width: 480px) and (max-width: 1024px) {
+
+      /* BANNER */
+      .banner td {
+        display: flex;
+      }
+
+      .banner a {
+        margin-left: 10px;
+      }
+
+      /* HEADER */
+      .header {}
+
+      .logos td {
+        gap: 50px;
+      }
+
+      /* NEWS */
+      .news {
+        margin: 0 50px 0 50px;
+      }
+
+      .news tr {
+        flex-direction: row;
+        gap: 20px;
+      }
+
+      .ver-evento .btn {
+        margin-bottom: 0;
+      }
+
+      /* OTHER INFO 1 */
+      .other-info1 {
+        padding: 64px 64px 64px 64px;
+      }
+
+      .other-info1 h2 {
+        text-align: center;
+        font-size: 36px;
+        padding-bottom: 64px;
+      }
+
+      .other-info1 img {
+        width: 70%;
+      }
+
+      /* OTHER INFO 2 */
+      .other-info2 {
+        padding: 120px 64px, 112px 64px;
+      }
+
+      .other-info2-content {
+        flex-direction: row;
+        gap: 32px;
+        margin: 20px;
+      }
+
+      .other-info2-img-content {
+        display: flex;
+      }
+
+      .other-info2-content img {
+        width: 100%;
+      }
+
+      .other-info2-text {
+        width: 250px;
+        padding: 32px;
+        align-items: start;
+      }
+
+      .other-info2-text span {
+        margin-bottom: 20px;
+        font-size: 15px;
+        line-height: 20px;
+      }
+
+      /* PROVEEDORES */
+      .footer {
+        padding: 50px;
+        padding-top: 30px;
+      }
+
+      .footer-content {
+        padding: 48px 0 0 48px;
+      }
+
+      .redes-container {
+        padding-left: 48px;
+      }
+    }
+
+    /* 
 
 
 
@@ -810,120 +847,268 @@ margin-top: 200px;
 
 */
 
-/* DESKTOP */
-@media (min-width: 1024px) {
-  
-  /* BANNER */
-  .banner td {
-    display: flex;
-  }
+    /* DESKTOP */
+    @media (min-width: 1024px) {
 
-  .banner a {
-    margin-left: 10px;
-  }
+      /* BANNER */
+      .banner td {
+        display: flex;
+      }
 
-  /* HEADER */
-  .header-content {
-    position: relative;
-    width: 857px;
-    margin-top: 200px;
-  }
+      .banner a {
+        margin-left: 10px;
+      }
 
-  .header h1 {
-    font-size: 56px;
-    line-height: 65px;
-  }
+      /* HEADER */
+      /* .header-content {
+        position: relative;
+        width: 857px;
+        margin-top: 200px;
+      }
 
-  .logos td {
-    gap: 50px;
-  }
-  
-  /* NEWS */
-  .news {
-    margin: 0 50px 0 50px;
-  }
+      .header h1 {
+        font-size: 56px;
+        line-height: 65px;
+      }
 
-  .news tr {
-    flex-direction: row;
-    gap: 50px;
-  }
+      .logos td {
+        gap: 50px;
+      } */
 
-  
-  /* EVENTS */
-  .ver-evento .btn {
-    margin-bottom: 0;
-  }
+      /* NEWS */
+      .news {
+        margin: 0 50px 0 50px;
+      }
 
-  /* OTHER INFO 1 */
-  .other-info1 h2 {
-    padding: 50px 0px 50px 20px;
-    text-align: center;
-    font-family: Bodoni 72;
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 57.6px;
-    letter-spacing: 0%;
-    text-align: center;
-    margin: 0 97px 0 97px;
-  }
+      .news tr {
+        flex-direction: row;
+        gap: 50px;
+      }
 
-  .other-info1 img {
-    width: 50%;
-  }
 
-  /* OTHER INFO 2 */
-  .other-info2 {
-    padding: 120px 64px, 112px 64px;
-  }
-  .other-info2-table {
-    margin: 120px 202px 120px 202px;
-  }
+      /* EVENTS */
+      .ver-evento .btn {
+        margin-bottom: 0;
+      }
 
-  .other-info2-content {
-    flex-direction: row;
-    gap: 32px;
-  }
+      /* OTHER INFO 1 */
+      .other-info1 h2 {
+        padding: 50px 0px 50px 20px;
+        text-align: center;
+        font-family: Bodoni 72;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 57.6px;
+        letter-spacing: 0%;
+        text-align: center;
+        margin: 0 97px 0 97px;
+      }
 
-  .other-info2-content img {
-    width: 656px;
-  }
+      .other-info1 img {
+        width: 50%;
+      }
 
-  .other-info2-text {
-    width: 364px;
-    padding: 32px;
-    align-items: start;
-  }
+      /* OTHER INFO 2 */
+      .other-info2 {
+        padding: 120px 64px, 112px 64px;
+      }
 
-  /* PROVEEDORES */
-  .footer {
-    padding: 68px;
-    padding-top: 30px;
-  }
-  .footer-content {
-    padding: 48px 0 0 48px;
-  }
-  .redes-container {
-    padding-left: 48px;
-  }
-}
+      .other-info2-table {
+        margin: 120px 202px 120px 202px;
+      }
 
-</style>
+      .other-info2-content {
+        flex-direction: row;
+        gap: 32px;
+      }
+
+      .other-info2-content img {
+        width: 656px;
+      }
+
+      .other-info2-text {
+        width: 364px;
+        padding: 32px;
+        align-items: start;
+      }
+
+      /* PROVEEDORES */
+      .footer {
+        padding: 68px;
+        padding-top: 30px;
+      }
+
+      .footer-content {
+        padding: 48px 0 0 48px;
+      }
+
+      .redes-container {
+        padding-left: 48px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
   <!-- Banner -->
-  <table class="banner">
+  <!-- <table class="banner">
     <tr>
       <td>
         <h4>ACCEDE A TODAS NUESTRAS NEWSLETTER</h4>
-        <a class="banner-a" href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/">Pincha aquí</a>
+        <a class="banner-a" href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/">Pincha aquí</a>
+      </td>
+    </tr>
+  </table> -->
+
+  <table width="100%" cellspacing="0" cellpadding="0" style="text-align: center; color: black; font-size: 12px; padding: 10px;">
+    <tr>
+      <td style="text-align: center;">
+        <div style="display: inline-block; vertical-align: middle; margin-right: 10px;">
+          <h4 style="margin: 0; font-size: 14px; text-align: center;">ACCEDE A TODAS NUESTRAS NEWSLETTER</h4>
+        </div>
+        <div style="display: inline-block; vertical-align: middle;">
+          <a href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/" style="color: #ef3340; font-weight: bold; text-decoration: none; display: inline-block;;">Pincha aquí</a>
+        </div>
       </td>
     </tr>
   </table>
 
-  <!-- Header -->
-  <table class="header">
+
+
+
+
+  <!-- HEADER -->
+  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0">
+    <tr>
+      <td style="position: relative; padding: 0;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" class="image-background">
+        <table width="" cellspacing="0" cellpadding="0" class="gradient-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
+          <tr class="h1-and-button">
+            <td>
+              <h1>La digitalización de las pymes: <br> La gran revolución de 2025</h1>
+              <span>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque
+                magni nulla? Similique praesentium accusamus voluptatibus!
+              </span>
+              <div class="header-btn">
+                <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"><button>Descúbrelo aquí</button></a>
+              </div>
+
+            </td>
+          </tr>
+
+          <tr class="logos">
+            <td>
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid">
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table> -->
+
+  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0; height: 812px; background-color: blue;">
+    <tr>
+      <td style="padding: 0; text-align: center; position: relative;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%)">
+
+        <div style="position: absolute; width: 100%; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 20%, rgba(239, 51, 64, 1) 100%);">
+          <div style="padding: 250px 10px; text-align: center; color: white;">
+            <h1 style="margin: 0;">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
+            <span style="display: block; margin: 15px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus
+              perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque magni nulla? Similique praesentium accusamus voluptatibus!</span>
+
+            <div class="header-btn">
+              <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
+                style="text-decoration: none; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
+            </div>
+          </div>
+
+        </div>
+      </td>
+
+    </tr>
+
+    <tr>
+      <td style="text-align: center; padding-top: 20px;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 100px; margin: 0 10px;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 10px;">
+      </td>
+    </tr>
+  </table> -->
+
+
+
+  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0; height: 812px; position: relative;">
+    <tr>
+      <td style="padding: 0; text-align: center; position: relative;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" style="width: 100%; height: 812px; object-fit: cover; filter: grayscale(100%); display: block;">
+
+        <div
+          style="position: absolute; top: 0; left: 0; width: 100%; height: 812px; background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 20%, rgba(239, 51, 64, 1) 100%); display: block; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
+
+          <h1 style="margin: 0;padding-top: 247px;">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
+          <span style="display: block; margin: 50px 20px; ">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque
+            magni nulla? Similique praesentium accusamus voluptatibus!
+          </span>
+
+          <div class="header-btn" style="padding-top: 20px; padding-bottom: 10px;">
+            <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
+              style="text-decoration: none; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
+          </div>
+
+          <div class="logos" style="padding-top: 50px;">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 100px; margin: 0 10px;">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 10px;">
+          </div>
+        </div>
+      </td>
+    </tr>
+  </table> -->
+
+
+  <table width="100%" cellspacing="0" cellpadding="0"
+    style="border: 0; background-image: url('https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png'); background-size: cover; background-position: center; height: 902px;">
+    <tr>
+      <td style="padding: 40px; margin-top: 247px; text-align: center; color: white; display: block;">
+        <h1 style="margin: 0; font-family: Merriweather;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: 0%;
+        text-align: center;
+        ">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
+        <p style="margin: 40px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus.</p>
+        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
+          style="text-decoration: none; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
+      </td>
+      <td style="margin-top: 200px; padding-bottom: 20px; display: block; text-align: center;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 120px; margin: 0 10px;">
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 10px;">
+      </td>
+    </tr>
+  </table>
+
+
+
+
+  <!-- 
+  
+  
+  
+  -->
+
+
+
+
+
+
+
+  <!-- Header ANTIGUO-->
+  <!-- <table class="header">
     <tr class="header-bg">
     <tr class="header-content">
       <th>
@@ -931,148 +1116,148 @@ margin-top: 200px;
       </th>
     <tr class="header-btn">
       <td><a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"><button>Descúbrelo aquí</button></a></td>
-    </tr> <!-- BtnHeader -->
+    </tr>
     <tr class="logos">
       <td>
         <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología">
         <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid">
       </td>
-    </tr> <!-- Logos -->
     </tr>
-    </tr> <!-- Header-bg -->
-  </table>
+    </tr>
+    </tr>
+  </table> -->
 
   <!-- NEWS -->
-<section>
-  <table class="news">
-    <tr class="news-title">
-      <td colspan="4">
-        <h2>Noticias y tendencias que te interesan</h2>
-      </td>
-    </tr>
-  
-    <tr class="news-content">
-      <td  class="news-item">
-        <div class="news-image-container">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/pbqswpoaxf/news-item1.jpg " alt="">
-          <div class="triangle-logo-red">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/nxjnsajqtf/ia-profit.png " alt="">
+  <section>
+    <table class="news">
+      <tr class="news-title">
+        <td colspan="4">
+          <h2>Noticias y tendencias que te interesan</h2>
+        </td>
+      </tr>
+
+      <tr class="news-content">
+        <td class="news-item">
+          <div class="news-image-container">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/pbqswpoaxf/news-item1.jpg " alt="">
+            <div class="triangle-logo-red">
+              <img id="ia-logo" src="https://d25ltszcjeom5i.cloudfront.net/48492/nxjnsajqtf/ia-profit.png " alt="">
+            </div>
           </div>
-        </div>
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
-      </td>
-      
-      <td class="news-item">
-        <div class="news-image-container">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/bgxgmeuplt/news-item2.jpg " alt="">
-          <div class="triangle-logo-red">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
+        </td>
+
+        <td class="news-item">
+          <div class="news-image-container">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/bgxgmeuplt/news-item2.jpg " alt="">
+            <div class="triangle-logo-red">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="">
+            </div>
           </div>
-        </div>
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/nuevas-claves-de-publicidad-programatica-para-negocios/">Nuevas claves de publicidad programática para negocios</a>
-      </td>
-      
-      <td class="news-item">
-        <div class="news-image-container">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/rnvingrujt/news-item3.jpg " alt="">
-          <div class="triangle-logo-red">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png " alt="">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/nuevas-claves-de-publicidad-programatica-para-negocios/">Nuevas claves de publicidad programática para negocios</a>
+        </td>
+
+        <td class="news-item">
+          <div class="news-image-container">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/rnvingrujt/news-item3.jpg " alt="">
+            <div class="triangle-logo-red">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png " alt="">
+            </div>
           </div>
-        </div>
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/que-es-data-science-como-puede-ayudar-a-tu-empresa/">Qué es Data Science y cómo puede ayudar a tu empresa</a>
-      </td>
-      
-      <td class="news-item">
-        <div class="news-image-container"> 
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/mfgmdhpvky/news-item4.jpg 
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/que-es-data-science-como-puede-ayudar-a-tu-empresa/">Qué es Data Science y cómo puede ayudar a tu empresa</a>
+        </td>
+
+        <td class="news-item">
+          <div class="news-image-container">
+            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/mfgmdhpvky/news-item4.jpg 
           " alt="">
-          <div class="triangle-logo-red">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png " alt="">
+            <div class="triangle-logo-red">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png " alt="">
+            </div>
           </div>
-        </div>
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
-      </td>
-    </tr> <!-- news-content -->
-  </table>
-</section> <!-- news-->
-  
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
+        </td>
+      </tr> <!-- news-content -->
+    </table>
+  </section> <!-- news-->
+
   <!-- EVENT -->
 
-<!-- OTHER INFO 1 -->
-<section class="other-info1"> <!-- fondo blanco -->
-   <table class="other-info1-table">
-  <tr>
-    <h2>Conoce más sobre nuestras guías de TIC Negocios Vídeomarketing</h2>
-  </tr>
-  <tr class="other-info1-container">
-    <a href="https://ticnegocios.camaramadrid.es/guia/videomarketing/"> <img src="https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg 
+  <!-- OTHER INFO 1 -->
+  <section class="other-info1"> <!-- fondo blanco -->
+    <table class="other-info1-table">
+      <tr>
+        <h2>Conoce más sobre nuestras guías de TIC Negocios Vídeomarketing</h2>
+      </tr>
+      <tr class="other-info1-container">
+        <a href="https://ticnegocios.camaramadrid.es/guia/videomarketing/"> <img src="https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg 
 " alt="" /></a>
-  </tr>
-</table>
-</section> 
+      </tr>
+    </table>
+  </section>
 
-<!-- OTHER INFO 2 -->
-<section class="other-info2"> <!-- fondo rojo -->
-  <table class="other-info2-table">
-    <tr class="other-info2-content">
-      <td class="other-info2-img-content">
-    <img src="https://d25ltszcjeom5i.cloudfront.net/48492/npimvhynpx/officeMeeting.png 
+  <!-- OTHER INFO 2 -->
+  <section class="other-info2"> <!-- fondo rojo -->
+    <table class="other-info2-table">
+      <tr class="other-info2-content">
+        <td class="other-info2-img-content">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/npimvhynpx/officeMeeting.png 
     " alt="" class="otherinfo2-img" />
-  </td>
-  <td class="other-info2-text">
-      <span
-        >¡Transforma tu carrera con las nuevas tecnologías! Explora cómo las nuevas oportunidades pueden revolucionar tu sector con nuestros informes gratuitos de diversas industrias. Descárgalos
-        aquí en TIC Negocios.</span>
-      <a href="https://ticnegocios.camaramadrid.es/informes/">
-        <button class="btn"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png 
+        </td>
+        <td class="other-info2-text">
+          <span>¡Transforma tu carrera con las nuevas tecnologías! Explora cómo las nuevas oportunidades pueden revolucionar tu sector con nuestros informes gratuitos de diversas industrias.
+            Descárgalos
+            aquí en TIC Negocios.</span>
+          <a href="https://ticnegocios.camaramadrid.es/informes/">
+            <button class="btn"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png 
           " alt="" class="" />Descargar aquí</button></a>
-  </td>
-  </tr>
-  </table>
-</section>
+        </td>
+      </tr>
+    </table>
+  </section>
 
-<section class="proveedores">
-  <table class="proveedores-table">
-    <tr class="proveedores-tittle">
-      <td colspan="4">
-        <h2>¿Quieres conocer a nuestros Proveedores Homologados?</h2>
-      </td>
-    </tr>
-    <tr class="proveedores-container">
-      <td><a href="https://www.pagero.com/es"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/crkhapwyix/pagero-logo.png 
+  <section class="proveedores">
+    <table class="proveedores-table">
+      <tr class="proveedores-tittle">
+        <td colspan="4">
+          <h2>¿Quieres conocer a nuestros Proveedores Homologados?</h2>
+        </td>
+      </tr>
+      <tr class="proveedores-container">
+        <td><a href="https://www.pagero.com/es"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/crkhapwyix/pagero-logo.png 
         " alt="Pagero" /></a></td>
-      <td><a href="https://backintown.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/ffiywxhaid/bit-logo.png" alt="Back in Town" /></a></td>
-      <td><a href="https://www.wavext.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/nrcwofyyax/wavext-logo.png
+        <td><a href="https://backintown.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/ffiywxhaid/bit-logo.png" alt="Back in Town" /></a></td>
+        <td><a href="https://www.wavext.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/nrcwofyyax/wavext-logo.png
         " alt="Wavext" /></a></td>
-      <td><a href="https://www.antites.com/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/tptegdbztm/antites-logo.png" alt="Antites" /></a></td>
-    </tr>
-  </table>
-</section>
+        <td><a href="https://www.antites.com/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/tptegdbztm/antites-logo.png" alt="Antites" /></a></td>
+      </tr>
+    </table>
+  </section>
 
- <!-- FOOTER -->
- <table class="footer">
-  <tr class="footer-content">
+  <!-- FOOTER -->
+  <table class="footer">
+    <tr class="footer-content">
       <td class="footer-logo-and-contact">
-      <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Logo" /> 
+        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Logo" />
       </td>
       <td>
-      <h5>Dirección:</h5>
-      <span>Plaza de la Independencia 1, 28001 Madrid</span>
+        <h5>Dirección:</h5>
+        <span>Plaza de la Independencia 1, 28001 Madrid</span>
       </td>
       <td>
-      <h5>Contacto:</h5>
-      <a href="tel:+">91 538 35 00</a>
-      <a href="mailto:">ticnegocios@camaramadrid.es</a>
-    </td>
-  </tr>
-<tr class="redes-container">
+        <h5>Contacto:</h5>
+        <a href="tel:+">91 538 35 00</a>
+        <a href="mailto:">ticnegocios@camaramadrid.es</a>
+      </td>
+    </tr>
+    <tr class="redes-container">
       <td>
         <a href="https://www.facebook.com/TICNegocios/">
           <img src="https://d25ltszcjeom5i.cloudfront.net/48492/ifslzhclpa/facebook.png 
           " alt="facebook" />
         </a>
-        </td>
-        <td>
+      </td>
+      <td>
         <a href="https://www.instagram.com/ticnegocios_camaramadrid/">
           <img src="https://d25ltszcjeom5i.cloudfront.net/48492/jyieredcfr/instagram.png 
           " alt="instagram" />
@@ -1090,10 +1275,8 @@ margin-top: 200px;
           " alt="linkedin" />
         </a>
       </td>
-  </tr>
-</table>
+    </tr>
+  </table>
 </body>
 
 </html>
-
-
