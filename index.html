@@ -28,8 +28,8 @@
       /* flex-direction: column;
       align-items: center;
       justify-content: center; */
-      max-width: 800px;
-      margin: 0 auto;
+      /* max-width: 800px;
+      margin: 0 auto; */
     }
 
     /* Estilos base mobile-first */
@@ -949,7 +949,25 @@
     }
   </style>
 
+
+
   <style type="text/css">
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Merriweather", serif !important;
+      ;
+    }
+
+    body {
+      font-family: "Rubik", sans-serif !important;
+      max-width: 800px !important;
+      margin: 0 auto !important;
+    }
+
     @media only screen and (max-width: 600px) {
 
       table,
@@ -994,6 +1012,11 @@
         /* Tamaño fijo para el icono del botón */
         height: auto !important;
       }
+
+      .footer-icon img {
+        width: 24px !important;
+        height: 24px !important;
+      }
     }
   </style>
 
@@ -1001,455 +1024,358 @@
 
 <body>
 
-  <!-- Banner -->
-  <!-- <table class="banner">
+  <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="width: 800px;">
     <tr>
       <td>
-        <h4>ACCEDE A TODAS NUESTRAS NEWSLETTER</h4>
-        <a class="banner-a" href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/">Pincha aquí</a>
-      </td>
-    </tr>
-  </table> -->
-
-  <!-- <table width="100%" cellspacing="0" cellpadding="0" style="text-align: center; color: black; font-size: 12px; padding: 10px;">
     <tr>
-      <td style="text-align: center;">
-        <div style="display: inline-block; vertical-align: middle; margin-right: 10px;">
-          <h4 style="margin: 0; font-size: 14px; text-align: center; ">ACCEDE A TODAS NUESTRAS NEWSLETTER</h4>
-        </div>
-        <div style="display: inline-block; vertical-align: middle;">
-          <a href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/" style="color: #ef3340; text-decoration: none; display: inline-block; font-family: Merriweather;"><strong>Pincha
-              aquí</strong></a>
-        </div>
-      </td>
-    </tr>
-  </table> -->
+      <td>
 
-  <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="width: 100%; height: 30px; vertical-align: middle; text-align: center;" class="banner-mobile">
-    <tr align="center">
-      <td align="center" style="font-family: Merriweather; text-align: center; vertical-align: middle; padding: 0;">
-        <span style="font-family: Merriweather; font-size: 12px;">Accede a todas nuestras newsletter </span>
-        <a href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/" target="_blank" style="color: #ef333f; text-decoration: underline">
-          <span style="color: #ef333f; font-family: Merriweather; font-size: 12px">pincha aquí</span>
-        </a>
-      </td>
-    </tr>
-  </table>
-
-
-
-
-
-
-
-
-  <!-- HEADER -->
-  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0">
-    <tr>
-      <td style="position: relative; padding: 0;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" class="image-background">
-        <table width="" cellspacing="0" cellpadding="0" class="gradient-overlay" style="position: absolute; top: 0; left: 0; right: 0; bottom: 0;">
-          <tr class="h1-and-button">
-            <td>
-              <h1>La digitalización de las pymes: <br> La gran revolución de 2025</h1>
-              <span>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque
-                magni nulla? Similique praesentium accusamus voluptatibus!
-              </span>
-              <div class="header-btn">
-                <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"><button>Descúbrelo aquí</button></a>
-              </div>
-
-            </td>
-          </tr>
-
-          <tr class="logos">
-            <td>
-              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología">
-              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid">
+        <table cellspacing="0" cellpadding="0" border="0" width="100%" align="center" style="width: 100%; height: 30px; vertical-align: middle; text-align: center;" class="banner-mobile">
+          <tr align="center">
+            <td align="center" style="font-family: Merriweather; text-align: center; vertical-align: middle; padding: 0;">
+              <span style="font-family: Merriweather; font-size: 12px;">Accede a todas nuestras newsletter </span>
+              <a href="https://ticnegocios.camaramadrid.es/suscribete-a-nuestro-newsletter/" target="_blank" style="color: #ef333f; text-decoration: underline">
+                <span style="color: #ef333f; font-family: Merriweather; font-size: 12px">pincha aquí</span>
+              </a>
             </td>
           </tr>
         </table>
       </td>
     </tr>
-  </table> -->
-
-  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0; height: 812px; background-color: blue;">
-    <tr>
-      <td style="padding: 0; text-align: center; position: relative;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%)">
-
-        <div style="position: absolute; width: 100%; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 20%, rgba(239, 51, 64, 1) 100%);">
-          <div style="padding: 250px 10px; text-align: center; color: white;">
-            <h1 style="margin: 0;">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
-            <span style="display: block; margin: 15px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus
-              perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque magni nulla? Similique praesentium accusamus voluptatibus!</span>
-
-            <div class="header-btn">
-              <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
-                style="text-decoration: none; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
-            </div>
-          </div>
-
-        </div>
-      </td>
-
-    </tr>
 
     <tr>
-      <td style="text-align: center; padding-top: 20px;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 100px; margin: 0 10px;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 10px;">
-      </td>
-    </tr>
-  </table> -->
+      <td>
 
-
-
-  <!-- <table class="header" width="100%" cellspacing="0" cellpadding="0" style="border: 0; height: 812px; position: relative;">
-    <tr>
-      <td style="padding: 0; text-align: center; position: relative;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/eubnwwomuj/header.png" alt="Imagen" style="width: 100%; height: 812px; object-fit: cover; filter: grayscale(100%); display: block;">
-
-        <div
-          style="position: absolute; top: 0; left: 0; width: 100%; height: 812px; background: linear-gradient(to bottom, rgba(217, 217, 217, 0) 20%, rgba(239, 51, 64, 1) 100%); display: block; justify-content: center; align-items: center; color: white; text-align: center; padding: 20px;">
-
-          <h1 style="margin: 0;padding-top: 247px;">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
-          <span style="display: block; margin: 50px 20px; ">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus perspiciatis mollitia repellat error, repudiandae aut dolor ipsum fugit nemo iusto doloremque
-            magni nulla? Similique praesentium accusamus voluptatibus!
-          </span>
-
-          <div class="header-btn" style="padding-top: 20px; padding-bottom: 10px;">
-            <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
-              style="text-decoration: none; background-color: #ffffff; color: rgb(0, 0, 0); padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
-          </div>
-
-          <div class="logos" style="padding-top: 50px;">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 100px; margin: 0 10px;">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 10px;">
-          </div>
-        </div>
-      </td>
-    </tr>
-  </table> -->
-
-  <!-- 
-  <table width="100%" cellspacing="0" cellpadding="0"
-    style="border: 0; background-image: url('https://d25ltszcjeom5i.cloudfront.net/48492/gokrnmutsy/header_copia.png'); background-size: cover; background-position: center; height: 752px;">
-    <tr>
-      <td style="padding: 40px; margin-top: 247px; text-align: center; color: white; display: block; " class="header-mobile">
-        <h1 style="margin: 0; font-family: Merriweather;
-      font-weight: 700;
-      font-size: 40px;
-      line-height: 48px;
-      letter-spacing: 0%;
-      text-align: center;">La digitalización de las pymes: <br> La gran revolución de 2025</h1>
-        <p style="margin: 40px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus.</p>
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
-          style="text-decoration: none; background-color: #ffffff; color: #000000; padding: 10px 20px; border-radius: 5px; font-size: 16px;">Descúbrelo aquí</a>
-      </td>
-      <td style="margin-top: 150px; padding-bottom: 20px; display: block; text-align: center; background-color: blue;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 120px; margin: 0 25px;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 25px;">
-      </td>
-    </tr>
-  </table> -->
-
-  <table width="100%" cellspacing="0" cellpadding="0"
-    style="border: 0; background-image: url('https://d25ltszcjeom5i.cloudfront.net/48492/gokrnmutsy/header_copia.png'); background-size: cover; background-position: center; height: 752px;">
-    <tr>
-      <td style="padding: 40px; margin-top: 247px; text-align: center; color: white; display: block;" class="header-mobile">
-        <h1 style="margin: 0; font-family: Merriweather; font-weight: 700; font-size: 40px; line-height: 48px; letter-spacing: 0%; text-align: center;">
-          La digitalización de las pymes: <br> La gran revolución de 2025
-        </h1>
-        <p style="margin: 40px 0;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident facere nostrum ducimus.</p>
-
-        <!-- Tabla envolvente para el enlace -->
-        <table cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; border-radius: 5px; display: inline-block; text-align: center;">
-          <tr style="background-color: #ffffff;">
-            <td align="center" style="padding: 10px 20px; text-align: center; background-color: #ffffff; border-radius: 5px;">
-              <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
-                style="text-decoration: none; color: #000000; font-size: 16px;">Descúbrelo aquí</a>
+        <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%" align="center" style="table-layout: fixed; width: 100%;">
+          <tr>
+            <td valign="top" style="background-color: #ef333f; text-align: center; padding: 15px 0;">
+              <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%" align="center" style="table-layout: fixed; width: 100%;">
+                <tr>
+                  <td style="padding-bottom: 5px; padding-top: 5px;">
+                    <table width="100%" cellspacing="0" cellpadding="0" border="0" role="presentation">
+                      <tr>
+                        <th width="80%" valign="middle" style="font-weight: normal; text-align: left; padding-left: 40px;">
+                          <p style="margin: 0; font-family: Montserrat, Arial, Helvetica, sans-serif; font-size: 15px; color: #ffffff; line-height: 1.4;">
+                            <a href="https://ticnegocios.camaramadrid.es/" target="_blank" style="color: #ffffff; text-decoration: underline;">
+                              <strong>VISITA NUESTRO PORTAL Y DESCUBRE TODAS NUESTRAS NOVEDADES</strong>
+                            </a>
+                          </p>
+                        </th>
+                        <th width="40%" valign="middle" style="font-weight: normal; text-align: center;">
+                          <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%" align="center" style="
+                            background-color: #ffffff;
+                            border-radius: 5px;
+                            table-layout: fixed;
+                            width: max-content;
+                            margin-right: 30px;
+                          ">
+                            <tr>
+                              <td align="center" style="
+                                font-family: Montserrat, Arial, Helvetica, sans-serif;
+                                background-color: #ffffff;
+                                border-radius: 5px;
+                                padding: 12px;
+                              ">
+                                <a href="https://ticnegocios.camaramadrid.es/" target="_blank" style="
+                                  font-family: Montserrat, Arial, Helvetica, sans-serif;
+                                  font-weight: bold;
+                                  text-decoration: none;
+                                  display: block;
+                                  color: #030303;
+                                  font-size: 15px;
+                                ">
+                                  IR A TIC NEGOCIOS
+                                </a>
+                              </td>
+                            </tr>
+                          </table>
+                        </th>
+                      </tr>
+                    </table>
+                  </td>
+                </tr>
+              </table>
             </td>
           </tr>
         </table>
-      </td>
-      <td style="margin-top: 150px; padding-bottom: 20px; display: block; text-align: center; background-color: blue;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 120px; margin: 0 25px;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 25px;">
+
+
+
       </td>
     </tr>
-  </table>
 
+    <!-- HEADER -->
 
-
-
-  <!-- 
-  
-  
-  
-  -->
-
-
-  <!-- Header ANTIGUO-->
-  <!-- <table class="header">
-    <tr class="header-bg">
-    <tr class="header-content">
-      <th>
-        <h1>La digitalización de las pymes: <br> La gran revolución de 2025</h1>
-      </th>
-    <tr class="header-btn">
-      <td><a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"><button>Descúbrelo aquí</button></a></td>
-    </tr>
-    <tr class="logos">
+    <tr>
       <td>
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid">
+
+        <table width="100%" border="0" cellspacing="0" cellpadding="0"
+          style="border: 0; background-image: url('https://d25ltszcjeom5i.cloudfront.net/181060/mmaygugbiv/IMG_0425.png'); background-size: cover; background-position: center; height: 100%;">
+          <tr>
+            <td style="padding: 40px; margin-top: 247px; text-align: center; color: white; display: block;" class="header-mobile">
+              <h1 style="margin: 0; font-family: Merriweather; font-weight: 700; font-size: 40px; line-height: 48px; letter-spacing: 0%; text-align: center;">
+                La digitalización de las pymes: <br> La gran revolución de 2025
+              </h1>
+              <p style="margin: 40px 60px;">En 2025, la digitalización no será una opción, sino la clave para que las pymes sigan creciendo y compitiendo. Descubre en esta noticia cómo la inteligencia
+                artificial, la automatización y las soluciones en la nube están revolucionando el sector y qué pasos deben dar las empresas para no quedarse atrás. Las oportunidades son enormes, pero
+                ¿estás preparado para aprovecharlas?</p>
+
+              <!-- Tabla envolvente para el enlace -->
+              <table cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #ffffff; border-radius: 5px; display: inline-block; text-align: center;">
+                <tr style="background-color: #ffffff;">
+                  <td align="center" style="padding: 10px 20px; text-align: center; background-color: #ffffff; border-radius: 5px;">
+                    <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
+                      style="text-decoration: none; color: #000000; font-size: 16px;">Descúbrelo aquí</a>
+                  </td>
+                </tr>
+              </table>
+
+            </td>
+            <td style="margin-top: 150px; padding-bottom: 20px; display: block; text-align: center;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 120px; margin: 0 25px;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px; margin: 0 25px;">
+            </td>
+          </tr>
+        </table>
+
       </td>
     </tr>
-    </tr>
-    </tr>
-  </table> -->
 
-  <!-- NEWS -->
+    <!-- NEWS -->
 
-  <table width="100%" cellspacing="0" cellpadding="0" align="center" style="padding: 0 50px;">
-    <tr>
-      <td colspan="4" align="center" style="padding: 50px 0;">
-        <h2 style="margin: 0; font-size: 18px;">Noticias y tendencias que te interesan</h2>
-      </td>
-    </tr>
-    <tr>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/sbplgcqxgx/ia_profit-800x465_copia.jpg" alt="" width="100%">
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
-          style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/aobrjzkqnk/claves_publicidad-800x465_copia.jpg" alt="" width="100%">
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/nuevas-claves-de-publicidad-programatica-para-negocios/"
-          style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Nuevas claves de publicidad programática para negocios</a>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/fuwumtwnsj/data_science-800x465_copia.jpg" alt="" width="100%">
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
-          style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/dqtzfyydor/pexels-goumbik-590041-800x465_copia.jpg" alt="" width="100%">
-        <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
-          style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
-      </td>
-    </tr>
-  </table>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- EVENT -->
-
-  <!-- OTHER INFO 1 -->
-  <!-- <section class="other-info1">
-    <table class="other-info1-table">
+    <table width="100%" border="0" cellspacing="0" cellpadding="0" align="center" style="padding: 0 50px;">
       <tr>
-        <h2>Conoce más sobre nuestras guías de TIC Negocios Vídeomarketing</h2>
+        <td colspan="4" align="center" style="padding: 50px 0;">
+          <h2 style="margin: 0; font-size: 18px;">Noticias y tendencias que te interesan</h2>
+        </td>
       </tr>
-      <tr class="other-info1-container">
-        <a href="https://ticnegocios.camaramadrid.es/guia/videomarketing/"> <img src="https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg 
-" alt="" /></a>
+      <tr>
+        <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/sbplgcqxgx/ia_profit-800x465_copia.jpg" alt="" width="100%">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
+            style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
+        </td>
+        <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/aobrjzkqnk/claves_publicidad-800x465_copia.jpg" alt="" width="100%">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/nuevas-claves-de-publicidad-programatica-para-negocios/"
+            style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Nuevas claves de publicidad programática para negocios</a>
+        </td>
+        <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/fuwumtwnsj/data_science-800x465_copia.jpg" alt="" width="100%">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
+            style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
+        </td>
+        <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/dqtzfyydor/pexels-goumbik-590041-800x465_copia.jpg" alt="" width="100%">
+          <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/reglamento-inteligencia-artificial-para-empresas/"
+            style=" color: #000000; font-size: 14px; display: block; margin-top: 5px;">Reglamento de Inteligencia Artificial: ¿sabes si te afecta?</a>
+        </td>
       </tr>
     </table>
-  </section> -->
 
-  <!-- 
-  <table width="100%" cellspacing="0" cellpadding="0" style="padding: 10px 50px; ">
     <tr>
-      <td width="20%" align="center" style="padding: 0; vertical-align: middle; background-color: #f5f5f5;">
-        <h4 style="">Videomarketing</h4>
-        <div align="center" style="background-color: #ef333f; border-radius: 20px; padding: 10px 20px; width: max-content;">
-          <a href="https://ticnegocios.camaramadrid.es/informes/" style="display: inline-block; font-size: 1rem; color: white; text-decoration: none;">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png" alt="" width="20" style="vertical-align: middle; margin-right: 5px;">
-            Más Información
-          </a>
-        </div>
-      </td>
-      <td width="20%" align="center" style="padding: 0; vertical-align: middle;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg" alt="" style="width: 100%; display: block;">
-      </td>
-    </tr>
-  </table> -->
-
-
-  <table width="100%" cellspacing="0" cellpadding="0" style="padding: 50px 50px;">
-    <tr>
-      <td align="center" colspan="2" style="padding-bottom: 20px;">
-        <h2 style="margin: 0; text-align: center;">Conoce más sobre nuestras guías de TIC Negocios Videomarketing</h2>
-      </td>
-    </tr>
-    <tr style="background: url('https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg') no-repeat center center;
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" style="padding: 50px 50px;">
+          <tr>
+            <td align="center" colspan="2" style="padding-bottom: 20px;">
+              <h2 style="margin: 0; text-align: center;">Conoce más sobre nuestras guías de TIC Negocios</h2>
+            </td>
+          </tr>
+          <tr style="background: url('https://d25ltszcjeom5i.cloudfront.net/48492/idgjwfjnfq/guia-mejorar-conversacion-rrss.jpg') no-repeat center center;
                background-size: contain; height: 500px;">
-      <td width="50%" align="center" style="padding: 20px; background-color: transparent;">
-        <!-- Contenido visible en dispositivos móviles después de la imagen -->
-        <h4 style="margin: 0; font-size: 18px; color: #000;">Guía para mejorar tu conversión en Redes Sociales</h4>
-        <div style="margin-top: 20px; background-color: #ef3340; border-radius: 20px; padding: 10px 20px; width: max-content;">
-          <a href="https://ticnegocios.camaramadrid.es/guia/videomarketing/" style="display: inline-block; font-size: 1rem; color: white; text-decoration: none;">
-            <img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png" alt="" class="btn-icon" style="vertical-align: middle; margin-right: 5px;">
-            Más Información
-          </a>
-        </div>
+            <td width="50%" align="center" style="padding: 20px; background-color: transparent;">
+              <!-- Contenido visible en dispositivos móviles después de la imagen -->
+              <h4 style="margin: 0; font-size: 18px; color: #000;">Guía para mejorar tu conversión en Redes Sociales</h4>
+              <div style="margin-top: 20px; background-color: #ef3340; border-radius: 20px; padding: 10px 20px; width: max-content;">
+                <a href="https://ticnegocios.camaramadrid.es/guia/videomarketing/" style="display: inline-block; font-size: 1rem; color: white; text-decoration: none;">
+                  <img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png" alt="" class="btn-icon" style="vertical-align: middle; margin-right: 5px;">
+                  Más Información
+                </a>
+              </div>
+            </td>
+            <td width="50%" align="center" style="padding: 0;"></td>
+          </tr>
+        </table>
+
       </td>
-      <td width="50%" align="center" style="padding: 0;"></td>
     </tr>
-  </table>
+
+    <tr>
+      <td>
+
+        <table width="100%" cellspacing="0" cellpadding="0" style="padding: 50px 50px; margin: 0;       background-color: #ef334010;
+;">
+          <tr>
+            <td style="text-align: center; padding: 20px;">
+              <h2 style="margin: 0; color: #ef333f;">¡Transforma tu carrera con las nuevas tecnologías!</h2>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center; padding: 10px 20px;">
+              Explora cómo las nuevas oportunidades pueden revolucionar tu sector con nuestros informes gratuitos de diversas industrias.
+              Descárgalos aquí en TIC Negocios.
+            </td>
+          </tr>
+          <tr>
+            <td style="padding: 0; margin: 0;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/181060/xyoqfifony/informes.png" alt="Informes TIC Negocios" width="100%" style="display: block; max-width: 100%; height: auto;">
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: center; padding: 20px;">
+              <!-- Botón en tabla para compatibilidad con clientes de correo -->
+              <table cellspacing="0" cellpadding="0" border="0" align="center" style="display: inline-table;">
+                <tr>
+                  <td style="background-color: #ef333f; padding: 10px 20px; border-radius: 20px; text-align: center;">
+                    <a href="https://ticnegocios.camaramadrid.es/informes/" style="text-decoration: none; color: #ffffff; display: inline-block;">
+                      <img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png" alt="" style="vertical-align: middle; margin-right: 5px;" class="btn-icon">
+                      Descargar aquí
+                    </a>
+                  </td>
+                </tr>
+              </table>
+            </td>
+          </tr>
+        </table>
+
+      </td>
+    </tr>
+
+    <tr>
+      <td>
+
+        <table width="100%" cellspacing="0" cellpadding="0" align="center" style="padding: 50px 50px; padding-bottom: 0;">
+          <tr>
+            <td colspan="4" align="center" style="padding-bottom: 50px;">
+              <h2 style="margin: 0; font-size: 18px;">¿Quieres conocer a nuestros Proveedores Homologados?</h2>
+            </td>
+          </tr>
+          <tr>
+            <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/crkhapwyix/pagero-logo.png" alt="Pagero" width="100%">
+            </td>
+            <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/ffiywxhaid/bit-logo.png" alt="Back in Town" width="100%">
+              <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;"></span>
+            </td>
+            <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/nrcwofyyax/wavext-logo.png" alt="Wavext" width="100%">
+              <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;"></span>
+            </td>
+            <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
+              <img src="https://d25ltszcjeom5i.cloudfront.net/48492/tptegdbztm/antites-logo.png" alt="Antites" width="100%">
+              <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;"></span>
+            </td>
+          </tr>
+
+        </table>
+    <tr>
+      <td>
+        <table width="100%" cellspacing="0" cellpadding="0" align="left" style="padding: 20px 50px;">
+          <tr>
+            <td>
+              <p style="color: #000000; font-size: 12px; display: block; margin-top: 15px;"><span style="font-weight: bold; margin-right: 5px;">Pagero:</span>parte de Thomson Reuters, conecta a
+                compradores y proveedores
+                de todo el mundo,
+                ofreciendo una
+                solución
+                segura, automatizada y conforme a las regulaciones para el intercambio de facturas electrónicas y otros documentos comerciales a escala global</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="color: #000000; font-size: 12px; display: block; margin-top: 15px;"><span style="font-weight: bold; margin-right: 5px;">Back in Town:</span>Consultoría especializada en
+                Prospección Comercial Cualificada</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="color: #000000; font-size: 12px; display: block; margin-top: 15px;"><span style="font-weight: bold; margin-right: 5px;">Wavext:</span>Acompañar a las PYMES, grandes empresas,
+                instituciones públicas y organizaciones sin
+                ánimo de lucro a
+                revitalizar,
+                potenciar, reconstruir y vitaminar su propuesta de valor a través de tecnologías, medios, recursos y metodologías exponenciales como blockchain y gemelos digitales</p>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <p style="color: #000000; font-size: 12px; display: block; margin-top: 15px;"><span style="font-weight: bold; margin-right: 5px;">Antites:</span>Nuestro objetivo es "Mejorar el
+                rendimiento y calidad de los procesos de negocio de
+                nuestros clientes y
+                posibilitar
+                nuevos negocios mediante la transformación basada en la automatización inteligente"</p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+    </td>
+    </tr>
 
 
+    <!-- FOOTER -->
 
 
-  <!-- OTHER INFO 2 -->
-  <section class="other-info2"> <!-- fondo rojo -->
-    <table class="other-info2-table">
-      <tr class="other-info2-content">
-        <td class="other-info2-img-content">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/npimvhynpx/officeMeeting.png 
-    " alt="" class="otherinfo2-img" />
+    <table cellspacing="0" cellpadding="0" border="0" role="presentation" width="100%" align="center"
+      style="table-layout: fixed; width: 100%; border-spacing: 0; padding: 0; margin: 0; background-color: #000000;">
+      <tr>
+        <td style="padding: 0; margin: 0; line-height: 0;">
+          <img src="https://d25ltszcjeom5i.cloudfront.net/181060/xzzxpvmcye/IMG_0428.png" alt="" width="100%" style="display: block; width: 100%; height: 100%; border: none; padding: 0; margin: 0;">
         </td>
-        <td class="other-info2-text">
-          <span>¡Transforma tu carrera con las nuevas tecnologías! Explora cómo las nuevas oportunidades pueden revolucionar tu sector con nuestros informes gratuitos de diversas industrias.
-            Descárgalos
-            aquí en TIC Negocios.</span>
-          <a href="https://ticnegocios.camaramadrid.es/informes/">
-            <button class="btn"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/whuykzzrmu/btn-icon.png 
-          " alt="" class="" />Descargar aquí</button></a>
+      </tr>
+      <tr>
+        <td style="padding: 0; margin: 0;">
+          <table width="100%" cellspacing="0" cellpadding="0" border="0" align="center"
+            style="background-color: black; color: white; width: 100%; padding: 50px 30px; text-align: center; border-spacing: 0; margin: 0;">
+            <tr>
+              <td style="padding: 0; text-align: left;">
+                <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="max-width: 120px; margin-right: 20px;">
+                <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="max-width: 100px;">
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left; padding-top: 10px;">
+                <h5 style="margin: 0; font-size: 16px; color: white;">Dirección:</h5>
+                <span style="color: white; font-size: 14px;">Plaza de la Independencia 1, 28001 Madrid</span>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left; padding: 20px 0;">
+                <h5 style="margin: 0; font-size: 16px; color: white;">Contacto:</h5>
+                <a href="tel:+" style="color: white; text-decoration: none; font-size: 14px;">91 538 35 00</a>
+                <span style="color: white; margin: 0 10px;">|</span>
+                <a href="mailto:ticnegocios@camaramadrid.es" style="color: white; text-decoration: none; font-size: 14px;">ticnegocios@camaramadrid.es</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left; padding-top: 10px;" class="footer-icon">
+                <a href="https://www.facebook.com/TICNegocios/" style="display: inline-block; margin-right: 5px;">
+                  <img src="https://d25ltszcjeom5i.cloudfront.net/181060/bapnqsssvk/facebook.png" alt="facebook" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://www.instagram.com/ticnegocios_camaramadrid/" style="display: inline-block; margin-right: 5px;">
+                  <img src="https://d25ltszcjeom5i.cloudfront.net/181060/ntrscixojl/instagram.png" alt="instagram" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://x.com/TICnegociosMAD" style="display: inline-block; margin-right: 5px;">
+                  <img src="https://d25ltszcjeom5i.cloudfront.net/48492/kfqvvszvit/twitter.png" alt="twitter" style="width: 24px; height: 24px;">
+                </a>
+                <a href="https://www.linkedin.com/company/ticnegocios-madrid/" style="display: inline-block;">
+                  <img src="https://d25ltszcjeom5i.cloudfront.net/48492/fyfkcnkpib/linkedin.png" alt="linkedin" style="width: 24px; height: 24px;">
+                </a>
+              </td>
+            </tr>
+          </table>
         </td>
       </tr>
     </table>
-  </section>
 
-  <!-- <section class="proveedores">
-    <table class="proveedores-table">
-      <tr class="proveedores-tittle">
-        <td colspan="4">
-          <h2>¿Quieres conocer a nuestros Proveedores Homologados?</h2>
-        </td>
-      </tr>
-      <tr class="proveedores-container">
-        <td><a href="https://www.pagero.com/es"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/crkhapwyix/pagero-logo.png 
-        " alt="Pagero" /></a>
-          <span>Pagero, parte de Thomson Reuters, conecta a compradores y proveedores de todo el mundo, ofreciendo una solución segura, automatizada y conforme a las regulaciones para el intercambio
-            de facturas electrónicas y otros documentos comerciales a escala global.</span>
-        </td>
-        <td><a href="https://backintown.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/ffiywxhaid/bit-logo.png" alt="Back in Town" /></a><span>Consultoría especializada en Prospección
-            Comercial Cualificada</span></td>
-        <td><a href="https://www.wavext.io/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/nrcwofyyax/wavext-logo.png" alt="Wavext" /></a>
-          <span>Acompañar a las PYMES, grandes empresas, instituciones públicas y organizaciones sin ánimo de lucro a revitalizar, potenciar, reconstruir y vitaminar su propuesta de valor a través de
-            tecnologías, medios, recursos y metodologías exponenciales como blockchain y gemelos digitales</span>
-        </td>
-        <td><a href="https://www.antites.com/"><img src="https://d25ltszcjeom5i.cloudfront.net/48492/tptegdbztm/antites-logo.png" alt="Antites" /></a>
-          <span>Nuestro objetivo es "Mejorar el rendimiento y calidad de los procesos de negocio de nuestros clientes y posibilitar nuevos negocios mediante la transformación basada en la
-            Automatización Inteligente".</span>
-        </td>
-      </tr>
-    </table>
-  </section> -->
 
-  <table width="100%" cellspacing="0" cellpadding="0" align="center" style="padding: 50px 50px;">
-    <tr>
-      <td colspan="4" align="center" style="padding-bottom: 50px;">
-        <h2 style="margin: 0; font-size: 18px;">¿Quieres conocer a nuestros Proveedores Homologados?</h2>
-      </td>
+    </td>
     </tr>
-    <tr>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/crkhapwyix/pagero-logo.png" alt="Pagero" width="100%">
-        <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;">Pagero, parte de Thomson Reuters, conecta a compradores y proveedores de todo el mundo, ofreciendo una solución
-          segura, automatizada y conforme a las regulaciones para el intercambio de facturas electrónicas y otros documentos comerciales a escala global.</span>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/ffiywxhaid/bit-logo.png" alt="Back in Town" width="100%">
-        <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;">Consultoría especializada en Prospección Comercial Cualificada</span>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/nrcwofyyax/wavext-logo.png" alt="Wavext" width="100%">
-        <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;">Acompañar a las PYMES, grandes empresas, instituciones públicas y organizaciones sin ánimo de lucro a
-          revitalizar,
-          potenciar, reconstruir y vitaminar su propuesta de valor a través de tecnologías, medios, recursos y metodologías exponenciales como blockchain y gemelos digitales</span>
-      </td>
-      <td width="25%" align="center" style="padding: 0 10px; vertical-align: top;">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/tptegdbztm/antites-logo.png" alt="Antites" width="100%">
-        <span style="color: #595959; font-size: 10px; display: block; margin-top: 5px;">Nuestro objetivo es "Mejorar el rendimiento y calidad de los procesos de negocio de nuestros clientes y
-          posibilitar
-          nuevos negocios mediante la transformación basada en la automatización inteligente".</span>
-      </td>
+
+    </td>
     </tr>
   </table>
 
-
-
-
-  <!-- FOOTER -->
-  <table class="footer">
-    <tr class="footer-content">
-      <td class="footer-logo-and-contact">
-        <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Logo" />
-      </td>
-      <td>
-        <h5>Dirección:</h5>
-        <span>Plaza de la Independencia 1, 28001 Madrid</span>
-      </td>
-      <td>
-        <h5>Contacto:</h5>
-        <a href="tel:+">91 538 35 00</a>
-        <a href="mailto:">ticnegocios@camaramadrid.es</a>
-      </td>
-    </tr>
-    <tr class="redes-container">
-      <td>
-        <a href="https://www.facebook.com/TICNegocios/">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/ifslzhclpa/facebook.png 
-          " alt="facebook" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.instagram.com/ticnegocios_camaramadrid/">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/jyieredcfr/instagram.png 
-          " alt="instagram" />
-        </a>
-      </td>
-      <td>
-        <a href="https://x.com/TICnegociosMAD">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/kfqvvszvit/twitter.png
-          " alt="twitter" />
-        </a>
-      </td>
-      <td>
-        <a href="https://www.linkedin.com/company/ticnegocios-madrid/">
-          <img src="https://d25ltszcjeom5i.cloudfront.net/48492/fyfkcnkpib/linkedin.png 
-          " alt="linkedin" />
-        </a>
-      </td>
-    </tr>
-  </table>
 </body>
 
 </html>
