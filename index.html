@@ -67,6 +67,13 @@
       display: inline-block !important;
       background-color: #ffffff !important;
     }
+    .button-banner{ 
+      width: 100% !important;
+      padding: 15px 20px;
+      text-align: center;
+      background-color: #010101;
+      border-radius: 100px;
+    }
 
     .header-img-logo {
       /* max-width: 150px !important; */
@@ -107,12 +114,34 @@
     }
 
     @media only screen and (max-width: 600px) {
-
+      body {
+        width: 100vw !important;
+      }
       table,
       td {
         width: 100% !important;
         display: block !important;
       }
+      .button-banner{
+        margin-left: -20px;
+      border-radius: 80px;
+    }
+    .images-banner{
+      display:flex !important;
+      align-items: center !important;
+      justify-content: center !important;
+      flex-direction: row !important;
+
+    }
+    .header-img-logo {
+      max-width: 100px !important;
+      margin-bottom: 20px !important;
+    }
+
+    .header-img-logo-tic {
+      max-width: 120px !important;
+      margin-bottom: 20px !important;
+    }
 
       .table-block {
         width: 100% !important;
@@ -186,7 +215,15 @@
       }
 
       .header-mobile {
-        margin-top: 0 !important;
+
+       /*  margin-top: 0 !important; */
+       
+      }
+      .header-mobile h1 {
+        font-size: 40px !important;
+        line-height: 48px  !important;
+
+       
       }
 
       .btn-icon {
@@ -296,27 +333,21 @@
         <table width="100%" border="0" cellspacing="0" cellpadding="0"
           style="border: 0; background-image: url('https://d25ltszcjeom5i.cloudfront.net/181060/mmaygugbiv/IMG_0425.png'); background-size: cover; background-position: center ; height: 100%; text-align: center;">
           <tr>
-            <td style="padding: 40px; margin-top: 247px; text-align: center; color: white; display: block;" class="header-mobile">
-              <h1 style="margin: 0; font-family: Merriweather;
-              font-weight: 700;
-              font-size: 32px;
-              line-height: 38.4px;
-              letter-spacing: 0%;
-              text-align: center;
-              ">
+            <td style=" margin: 180px 0px 35px 0px; text-align: center; color: white; display: block;" class="header-mobile">
+              <h1 style="margin: 0 30px 0 30px; font-family: 'Merriweather', serif; font-weight: 600; font-size: 32px; line-height: 48px; letter-spacing: 0%; text-align: center;">
                 La digitalización de las pymes: <br> La gran revolución de 2025
               </h1>
-              <p style="margin: 40px 60px;">En 2025, la digitalización no será una opción, sino la clave para que las pymes sigan creciendo y compitiendo. Descubre en esta noticia cómo la inteligencia
+<!--               <p style="margin: 40px 60px;">En 2025, la digitalización no será una opción, sino la clave para que las pymes sigan creciendo y compitiendo. Descubre en esta noticia cómo la inteligencia
                 artificial, la automatización y las soluciones en la nube están revolucionando el sector y qué pasos deben dar las empresas para no quedarse atrás. Las oportunidades son enormes, pero
-                ¿estás preparado para aprovecharlas?</p>
+                ¿estás preparado para aprovecharlas?</p> -->
             </td>
           </tr>
           <tr>
             <td>
-              <table border="0" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #010101; border-radius: 5px; display: inline-block; text-align: center;"
+              <table border="0" cellspacing="0" cellpadding="0" border="0" align="center" style="background-color: #010101; border-radius: 100px; display: inline-block; text-align: center;"
                 class="button-table">
-                <tr style="background-color: #010101;">
-                  <td align="center" style="padding: 10px 20px; text-align: center; background-color: #010101; border-radius: 5px;">
+                <tr>
+                  <td   class="button-banner">
                     <a href="https://ticnegocios.camaramadrid.es/servicios/tendencias/la-digitalizacion-de-las-pymes-la-gran-revolucion-de-2025/"
                       style="text-decoration: none; color: #f8f8f8; font-size: 16px; background-color: #010101">Descúbrelo aquí</a>
                   </td>
@@ -326,7 +357,7 @@
           </tr>
 
           <tr>
-            <td style="margin-top: 150px; padding-bottom: 20px; display: block; text-align: center;">
+            <td style="margin: 90px 0px 60px 0px; height: 110px; display: block; text-align: center;" class="images-banner">
               <img src="https://d25ltszcjeom5i.cloudfront.net/48492/zhtezvqrcz/logo-tic.png" alt="Tecnología" style="width: 200px; margin: 0 25px; vertical-align: middle;" class="header-img-logo-tic">
               <img src="https://d25ltszcjeom5i.cloudfront.net/48492/gdryvnxbmj/logo-camara.png" alt="Cámara Madrid" style="width: 200px; margin: 0 25px;vertical-align: middle;"
                 class="header-img-logo">
