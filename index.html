@@ -9,10 +9,27 @@
 
   <title>Newsletter</title>
 
+
   <style type="text/css" emogrify="no">
     @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
     @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
 
+  <!-- Estilos específicos para Outlook -->
+  <!--[if !mso]><!-->
+  <style type="text/css" emogrify="no">
+    @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@100;200;300;400;500;600;700;800;900&display=swap');
+  </style>
+  <!--<![endif]-->
+
+  <!--[if mso
+      ]><xml>
+        <o:OfficeDocumentSettings> <o:AllowPNG /> <o:PixelsPerInch>96</o:PixelsPerInch> </o:OfficeDocumentSettings>
+      </xml><!
+    [endif]-->
+
+  <style>
     h1,
     h2,
     h3,
@@ -39,6 +56,11 @@
       margin: 0;
       padding: 0;
       margin: 0 auto !important;
+    }
+
+    table td {
+      border-collapse: collapse;
+      mso-line-height-rule: exactly;
     }
 
     .interior-table {
@@ -255,6 +277,8 @@
 
     }
   </style>
+
+
 
 </head>
 
